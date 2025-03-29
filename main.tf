@@ -6,7 +6,7 @@ resource "aws_instance" "one" {
 count = 4
 ami = "ami-08fe5144e4659a3b3"
 instance_type = "t2.medium"
-key_name = "netflix"
+key_name = "Server1"
 vpc_security_group_ids = ["sg-0c14d574de1689d09"]
 tags = {
 Name = var.instance_names[count.index]
